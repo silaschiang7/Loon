@@ -1,0 +1,9 @@
+#!name=naixue
+#!desc=naixue
+#!icon=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/naixue.png
+
+[Script]
+http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60, tag=奈雪点单获取token
+
+[MITM]
+hostname = tm-web.pin-dao.cn
