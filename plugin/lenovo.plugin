@@ -1,0 +1,9 @@
+#!name=lenovo
+#!desc=lenovo
+#!icon=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/lenovo.png
+
+[Script]
+http-response ^https:\/\/mmembership\.lenovo\.com\.cn\/member-hp-webapi\/v1\/user\/getUserProfileInformation script-path=https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, requires-body=true, timeout=60, tag=联想赚金豆获取token
+
+[MITM]
+hostname = mmembership.lenovo.com.cn
