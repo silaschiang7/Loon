@@ -1,0 +1,9 @@
+#!name=xcbwc
+#!desc=xcbwc
+#!icon=https://raw.githubusercontent.com/silaschiang7/Quantumult_X/main/icon/xiaocan.png
+
+[Script]
+http-response ^https:\/\/gw\.xiaocantech\.com\/rpc script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw, requires-body=true, timeout=60, tag=小蚕霸王餐
+
+[MITM]
+hostname = gw.xiaocantech.com
