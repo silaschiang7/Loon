@@ -1,0 +1,12 @@
+#!name=泰康在线
+#!desc=泰康在线
+#!icon=https://raw.githubusercontent.com/xzxxn777/Surge/refs/heads/main/Script/TKZX/TKZX.PNG
+#!keyword=羊毛
+
+[Script]
+http-response ^https:\/\/m\.tk\.cn\/wechat_item\/rest\/xcx\/login script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.js, requires-body=true, tag=泰康在线_获取token
+
+cron "8 8,22 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.js, timeout=3600, tag=泰康在线
+
+[MITM]
+hostname = m.tk.cn
