@@ -1,0 +1,11 @@
+#!name=nissan
+#!desc=nissan
+#!icon=https://raw.githubusercontent.com/silaschiang7/Quantumult_X/main/icon/nissan.png
+
+[Script]
+http-response ^https?:\/\/oneapph5\.dongfeng-nissan\.com\.cn\/mb-gw\/dndc-gateway\/community\/api\/v2\/user$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/nissan.js, requires-body=true, timeout=60, tag=nissan
+
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/nissan.js, timeout=120, tag=东风日产签到
+
+[MITM]
+hostname = oneapph5.dongfeng-nissan.com.cn
