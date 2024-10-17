@@ -1,0 +1,10 @@
+#!name=redbull
+#!desc=redbull
+#!icon=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/redbull.png
+
+[Script]
+cron "30 10 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, timeout=300, tag=红牛会员俱乐部
+http-request ^https:\/\/xiaodian\.miyatech\.com\/api\/user\/login\/wx-jc script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, requires-body=true, timeout=10, tag=红牛会员俱乐部_获取token
+
+[MITM]
+hostname = xiaodian.miyatech.com
