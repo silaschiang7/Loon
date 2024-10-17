@@ -1,0 +1,15 @@
+#!name=csvw
+#!desc=csvw
+#!icon=https://raw.githubusercontent.com/silaschiang7/Quantumult_X/main/icon/sqdz.png
+
+[Rewrite]
+# 这是屏蔽旧版APP弹出更新的，开启重写可以使用旧版
+^https?:\/\/api\.mos\.csvw\.com\/mos\/app-update\/api\/v1\/app\/update$ - reject-dict
+
+[Script]
+http-request ^https?:\/\/api\.mos\.csvw\.com\/mos\/security\/api\/v1\/app\/at\/actions\/refresh$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=60, tag=csvw
+
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=120, tag=上汽大众
+
+[MITM]
+hostname = api.mos.csvw.com
