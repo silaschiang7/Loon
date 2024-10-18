@@ -4,4 +4,4 @@
 #!keyword=羊毛
 
 [Script]
-cron "39 11,19 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/FTEJ/FTEJ.js, timeout=3600, tag=福田e家
+cron "17 9 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/FTEJ/FTEJ.js, timeout=3600, tag=福田e家
