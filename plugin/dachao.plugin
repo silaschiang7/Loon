@@ -4,4 +4,4 @@
 #!keyword=羊毛
 
 [Script]
-cron "30 30,35,40 9 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.js, timeout=3600, tag=大潮
+cron "17 9,11,15 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.js, timeout=3600, tag=大潮
