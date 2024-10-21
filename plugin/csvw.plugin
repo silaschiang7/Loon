@@ -9,7 +9,7 @@
 [Script]
 http-request ^https?:\/\/api\.mos\.csvw\.com\/mos\/security\/api\/v1\/app\/at\/actions\/refresh$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=60, tag=csvw
 
-cron "17 9 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=120, tag=上汽大众
+#cron "17 9 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/csvw.js, timeout=120, tag=上汽大众
 
 [MITM]
 hostname = api.mos.csvw.com
