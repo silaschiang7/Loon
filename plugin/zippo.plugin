@@ -6,11 +6,11 @@
 # 𝐙𝐈𝐏𝐏𝐎会员中心获取Authorization
 http-request ^https?:\/\/wx-center\.zippo\.com\.cn\/api\/users\/profile script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=60, tag=zippo
 
-cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=120, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg
+#cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=120, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg
 
 http-request ^https?:\/\/wx-center\.zippo\.com\.cn\/api\/users\/profile script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=60, tag=𝐙𝐈𝐏𝐏𝐎会员中心获取Authorization
 
-cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=10, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg
+#cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=10, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg
 
 [MITM]
 hostname = wx-center.zippo.com.cn
