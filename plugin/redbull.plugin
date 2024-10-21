@@ -6,7 +6,7 @@
 [Script]
 http-response ^https:\/\/xiaodian\.miyatech\.com\/api\/user\/login\/wx-jc script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, requires-body=true, tag=红牛会员俱乐部_获取token
 
-cron "44 8,18 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, timeout=3600, tag=红牛会员俱乐部
+#cron "44 8,18 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, timeout=3600, tag=红牛会员俱乐部
 
 [MITM]
 hostname = xiaodian.miyatech.com
